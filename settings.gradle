@@ -1,0 +1,6 @@
+rootProject.name='HuanJvBro'
+include ':app'
+include ':home-module'
+include ':user-module'
+include ':login-module'
+include ':base-module'

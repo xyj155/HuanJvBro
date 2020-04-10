@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".view.UserBankCardActivity">
+
+    <include layout="@layout/common_toolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="银行卡"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_user_bank_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:drawableLeft="@mipmap/ic_bank_test"
+            android:drawablePadding="10dp"
+            android:id="@+id/tv_bank_name"
+            android:gravity="center"
+            android:text="浦发银行"
+            android:textColor="#fff"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dp"
+            android:text="借记卡"
+            android:textColor="#fff"
+            android:textSize="13dp" />
+        <TextView
+            android:layout_below="@+id/tv_bank_name"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:textColor="#fff"
+            android:text="430223  1997  1115  7474"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="11dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="#bfbfbf"
+        android:lineSpacingExtra="5dp"
+        android:layout_marginRight="15dp"
+        android:text="1.仅可绑定一张银行卡或一张借记卡，不可绑定多张\n2.申请提款后，如想再一次进行提款需要等待15个工作日才可以发起提款申请\n3.冻结款项不可进行提现" />
+</LinearLayout>

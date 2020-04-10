@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    tools:context=".view.HomeActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/draw_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#fff"
+                android:gravity="bottom">
+
+                <ImageView
+                    android:id="@+id/iv_user"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:padding="12dp"
+                    android:src="@mipmap/ic_home_user" />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:padding="11dp"
+                    android:src="@mipmap/ic_home_service" />
+            </RelativeLayout>
+
+            <net.lucode.hackware.magicindicator.MagicIndicator
+                android:id="@+id/mg_title"
+                android:layout_width="match_parent"
+                android:layout_height="45dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vp_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="start"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/ic_base_avatar" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/iv_avatar"
+                    android:text="徐易杰"
+                    android:textColor="#000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_username"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/iv_avatar"
+                    android:drawableLeft="@mipmap/ic_user_auth"
+                    android:gravity="center|left"
+                    android:text="未实名"
+                    android:textColor="#000"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_auth"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@mipmap/common_navigator"
+                android:paddingRight="5dp"
+                android:paddingLeft="14dp"
+                android:text="实名认证"
+                android:textColor="#000"
+                android:gravity="center|left"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#fafafa"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:drawableRight="@mipmap/common_navigator"
+                android:paddingRight="5dp"
+                android:paddingLeft="14dp"
+                android:id="@+id/tv_my_account"
+                android:text="我的账户"
+                android:textColor="#000"
+                android:gravity="center|left"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="#fafafa"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tv_setting"
+                android:layout_height="55dp"
+                android:drawableRight="@mipmap/common_navigator"
+                android:paddingRight="5dp"
+                android:paddingLeft="14dp"
+                android:text="设置"
+                android:textColor="#000"
+                android:gravity="center|left"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</LinearLayout>
